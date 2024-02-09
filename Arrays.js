@@ -9,6 +9,7 @@ console.log(arr1[3])
 let arr2 = new Array("India",1000,"Russia",800,"Germany",600,"France",400)
 console.log(arr2[0])
 
+// Hello
 // Copy operations on arrays in JavaScript make shallow copies of it
 // Shallow copies :
 //  Change in them results change in the actual variable.They share same reference point.
