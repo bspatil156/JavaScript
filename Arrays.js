@@ -19,7 +19,7 @@ console.log(typeof(arr3[3]))
 console.log(arr3[4])
 console.log(typeof(arr3[4]))
 
-// Array Mthods() : 
+// Array Methods() : 
 
 // push() method :
 // Adds the element provided as a paramter to the end of array.
@@ -28,7 +28,7 @@ arr1.push("Porche")
 console.log(arr1)
 
 // pop() method : 
-// Removes the element provided as parameter from the  end of array.
+// Removes the element from the  end of array.
 arr1.pop()
 console.log(arr1)
 
@@ -36,10 +36,14 @@ console.log(arr1)
 // Adds the element provided as parameter to the start of array.
 arr1.unshift("BMW")
 console.log(arr1)
+console.log(arr1.unshift("Lamborghini"))
+console.log(arr1)
 
 // shift() method : 
 // Removes the element provided as parameter to the start of array.
-arr1.shift("BMW")
+arr1.shift()
+console.log(arr1)
+console.log(arr1.shift())
 console.log(arr1)
 
 // includes() method : 
@@ -56,7 +60,7 @@ console.log(arr1.indexOf("Ferrari"))
 console.log(arr1.indexOf("Mustang",1))
 
 // join() method : 
-// assigns the variable values of elements in array seperated with commas if no string provided as parameter.
+// assigns the variable, values of elements in array seperated with commas if no string provided as parameter.
 // Provide parameter as a string to seperate the array elements.
 // Returns result of String type.
 let myArr = arr1.join()
@@ -85,14 +89,14 @@ console.log("This is slice : ",myArr2)
 // elements of specified parameter are seperated
 // both first and second parameter indexes is included or considered for seperation
 // the elements specified are dropped from the orginal array.
-let myArr3 = arr2.splice(2,6)
+let myArr3 = arr2.splice(2,3)
 console.log("C ", arr2)
 console.log("This is splice : ",myArr3)
 
-// Copy operations on arrays in JavaScript make shallow copies of it
-// Shallow copies :
-//  Change in them results change in the actual variable.They share same reference point.
-// Stored in Heap Memory
-// Deep copies :
-// Change in them is not visible in actual variable.They do not share same reference point.
-// Stored in Stack memory
+// // Copy operations on arrays in JavaScript make shallow copies of it
+// // Shallow copies :
+// //  Change in them results change in the actual variable.They share same reference point.
+// // Stored in Heap Memory
+// // Deep copies :
+// // Change in them is not visible in actual variable.They do not share same reference point.
+// // Stored in Stack memory
