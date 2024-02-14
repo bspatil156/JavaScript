@@ -88,6 +88,7 @@ console.log("This is slice : ",myArr2)
 // splice
 // elements of specified parameter are seperated
 // both first and second parameter indexes is included or considered for seperation
+// second parameter is the number of elements to be dropped
 // the elements specified are dropped from the orginal array.
 let myArr3 = arr2.splice(2,3)
 console.log("C ", arr2)
@@ -100,3 +101,32 @@ console.log("This is splice : ",myArr3)
 // // Deep copies :
 // // Change in them is not visible in actual variable.They do not share same reference point.
 // // Stored in Stack memory
+
+// Arrays take any data-type element in it.
+// Hence, push method can take any data-type as parameter
+// Example : 
+// Push add elements in exsisting array only
+// If an array is pushed the entire Array is an element.
+let eng_newspaper = ["The Hindu","Times Of India","The Economic","Indian Express"]
+let hindi_newspaper = ["Sakal","Lokmat","Punya-nagari","Prabhat"]
+eng_newspaper.push(hindi_newspaper)
+console.log(eng_newspaper)
+console.log(eng_newspaper.push(hindi_newspaper))
+
+// concat() method : 
+// Creates a new array with individual elements
+let eng_np = ["The Hindu","Times Of India","The Economic","Indian Express"]
+let hindi_np = ["Sakal","Lokmat","Punya-nagari","Prabhat"]
+let np = eng_np.concat(hindi_np)
+console.log(np)
+
+// spread operator : 
+// Alternatively used for concatenating arrays.
+let n_paper = [...eng_np,...hindi_np]
+console.log(n_paper)
+
+// flat() method : 
+let subjects = ["English","History","Geometry",["Hindi","Geography","Sanskrit"],"Algebra",["Science","Defence Studies","Marathi"]]
+let mysubjects = subjects.flat()
+console.log(mysubjects)
+
