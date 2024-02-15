@@ -130,3 +130,23 @@ let subjects = ["English","History","Geometry",["Hindi","Geography","Sanskrit"],
 let mysubjects = subjects.flat()
 console.log(mysubjects)
 
+
+// isArray() method : 
+// Returns a boolean value depending upon the parameter provided is array or not
+console.log(Array.isArray("Bhavesh"))
+console.log(Array.isArray(arr))
+
+// from() method : 
+// creates an array of itterable object
+console.log(Array.from("Bhavesh"))
+// Returns an empty array in case if array of key or value is to be formed is not provided.
+console.log(Array.from({name : "Bhavesh",
+                        age : 21,
+                        hobby : "Reading"}))
+
+// of() method : 
+// creates an array of variables provided as parameter
+score1 = 100
+score2 = 200
+score3 = 300
+console.log(Array.of(score1,score2,score3))
