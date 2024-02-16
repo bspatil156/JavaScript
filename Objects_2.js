@@ -40,7 +40,7 @@ let obj2 = {d : "D", e : "E", f : "F"}
 let obj3 = {g : "G", h : "H", i : "I"}
 
 let obj4 = {obj1,obj2}
-console.log(obj3)
+console.log(obj4)
 
 let target = {}
 Object.assign(target,obj1,obj2,obj3)
@@ -67,14 +67,27 @@ let arr = [
 console.log(arr[1].name)
 console.log(arr[0].name)
 
+// keys() method : 
+// Returns keys of the Object in Array
 console.log(Object.keys(myobj))
 console.log(typeof(Object.keys(myobj)))
+
+// values() method : 
+// Returns values of the Object in Array
 console.log(Object.values(myobj))
 console.log(typeof(Object.values(myobj)))
+
+// entries() method : 
+// Returns the entries of Object in array : 
 console.log(Object.entries(myobj))
 console.log(typeof(Object.entries(myobj)))
 
 // hasOwnProperty() method : 
 // Returns true if parameter provided is present as key in Object
 console.log(myobj.hasOwnProperty("Interest")) 
+console.log(myobj.hasOwnProperty("Hobby"))
 console.log(myobj.hasOwnProperty("surname"))
+
+console.log(obj1.hasOwnProperty("a"))
+console.log(obj1.hasOwnProperty("A"))
+
