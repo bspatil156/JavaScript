@@ -8,3 +8,20 @@ let book = {
 // Object destructuring : 
 let {author_name : a_name} = book
 console.log(a_name)
+
+// JSON : 
+// JSON is represented as arrays and objects
+
+// JSON using Object : 
+// {
+//     "name" : "Bhavesh",
+//     "age" : 21,
+//     "hobby" : "Reading"
+// }
+
+// JSON using arrays : 
+// [
+//     {(Object)},
+//     {(Object)},
+//     {(Object)}
+// ]
