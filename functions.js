@@ -1,5 +1,5 @@
 function Print(){
-    console.log("Hey there, Myself Bhavesh!!!")
+    console.log("Hey there, Myself Bhavesh Patil !!!")
 }
 
 // Gives the reference of the function, i.e. the address of the function
@@ -26,7 +26,7 @@ console.log("Result One : ",result1)
 function addTwoNumbers2(a,b){
     console.log("Here's your result!!!")
     return a + b
-    console.log("Are you!!!")
+    console.log("Are you satisfied!!!")
 }
 
 addTwoNumbers2()
