@@ -58,3 +58,48 @@ function isLoggedIn2(u_name){
 
 console.log(isLoggedIn2("Dhiraj"))
 console.log(isLoggedIn2())
+
+// Rest Operator in function : 
+function addToCart1(prices1){
+    return prices1
+}
+
+console.log(addToCart1(100))
+
+function addToCart2(...prices2){
+    console.log(typeof(prices2))
+    return prices2
+}
+
+console.log(addToCart2(100,300,200,500,400))
+console.log(typeof(addToCart2(100,300,200,500,400)))
+
+function addToCart3(num1,num2,...prices3){
+    console.log(num1)
+    console.log(num2)
+    return prices3
+}
+console.log(addToCart3(200,500,800,100,400))
+
+// A rest parameter must be the last in parameter list 
+// function addToCart4(...prices4,num3,num4){
+//     console.log(num3)
+//     console.log(num4)
+//     return prices4
+// }
+// console.log(addToCart4(300,600,200,100,400,900,1000))
+
+function account1(anyobject1){
+    return `Your username is ${anyobject1.username} and amount is ${anyobject1.amount}`
+}
+
+console.log(account1({username:"Bhavesh", amount: 2000000000000}))
+
+function account2(array){
+    return array[2]
+}
+console.log(account2([1,2,3,4,5,6,7]))
+
+let arr = ["Bhavesh",2000000000000,"Reading","Sanjay","Patil"]
+console.log(account2(arr))
+console.log(account2(arr[3]))
