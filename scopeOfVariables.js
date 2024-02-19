@@ -64,4 +64,6 @@ let two_func = function two(){
 }
 
 console.log(two_func)
+console.log(typeof((two_func)))
 console.log(two_func())
+console.log(typeof(two_func()))
