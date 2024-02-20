@@ -24,6 +24,4 @@
     console.log(`IIFE Of Arrow Function`)
 })();
 
-((name) => `Hello ${name}`)(console.log("Bhavesh"))
-
-
+((name) => `Hello ${name}`)(console.log(("Bhavesh")))
