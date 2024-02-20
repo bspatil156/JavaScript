@@ -57,6 +57,8 @@ if(LoginStatus || authenticated){
 }
 
 // The switch case : 
+// 'break' ensures that further cheecking of cases does'nt happen if a case is executed
+// Removing 'break' enables further execution except default, though case has been already executed
 let month = 4
 switch(month){
     case 1:
