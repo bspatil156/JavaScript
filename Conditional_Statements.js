@@ -100,3 +100,26 @@ switch(month){
     default:
         console.log("There are only 12 months in an year!!!")
 }
+
+// nullish coalescing operator : for 'null' and undefined
+// Assigns other values than 'null' and 'undefined' 
+let val1 = null ?? 12
+console.log(val1)
+
+val1 = 15 ?? undefined
+console.log(val1)
+
+val1 = 14 ?? null ?? 16
+console.log(val1)
+
+val1 = undefined ?? 10 ?? 24
+console.log(val1)
+
+val1 = undefined ?? null
+console.log(val1)
+
+// ternary operator : 
+// Syntax : (condition) ? (statement for true condition) : (statement for false condition)
+ let amount = 1000
+ amount >= 100 ? console.log("You can debit money from your account") : 
+ console.log("Insufficient Balance")
