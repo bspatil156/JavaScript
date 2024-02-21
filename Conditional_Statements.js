@@ -118,6 +118,10 @@ console.log(val1)
 val1 = undefined ?? null
 console.log(val1)
 
+val1 = null ?? undefined
+console.log(val1)
+
+
 // ternary operator : 
 // Syntax : (condition) ? (statement for true condition) : (statement for false condition)
  let amount = 1000
