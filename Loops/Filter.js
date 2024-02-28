@@ -11,10 +11,13 @@ console.log(values)
 // filter() method : 
 // filter returns the value that is mentioned in the call 
 // filter checks the condition and return the array of elements that proove the condition as true
-let fillter = arr.filter((element) =>{
+let fillter1 = arr.filter((element) =>{
     return element
 })
-console.log(fillter)
+console.log(fillter1)
+
+let fillter2 = arr.filter( (element) => element == "JavaScript")
+console.log(fillter2)
 
 let obj = [
     {
