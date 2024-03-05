@@ -1,6 +1,7 @@
 let arr = ["Java","JavaScript","Python","Ruby","Swift","Rust"]
 
 // forEach does'nt return any value
+// Instead it iterates every element
 let values = arr.forEach( (element) =>{
     console.log(element)
     return element
@@ -9,8 +10,9 @@ let values = arr.forEach( (element) =>{
 console.log(values)
 
 // filter() method : 
-// filter returns the value that is mentioned in the call 
+// filter returns the array of elements in the array based on the condition
 // filter checks the condition and return the array of elements that proove the condition as true
+// Operations cannot be performed on filter
 let fillter1 = arr.filter((element) =>{
     return element
 })
@@ -75,6 +77,7 @@ console.log(mrssm)
 
 
 // filter does'nt return any array operation performed on it 
+// Instead it returns the original array
 let myarr = [1,2,3,4,5,6,7,8,9,10]
 let number = myarr.filter( (num) => num * 2)
 console.log(number)
@@ -88,3 +91,13 @@ let num = myarr.filter( (num) => {
     }
 })
 console.log(num)
+
+let num2 = myarr.filter( (num) => {
+    if(num>5){
+        return num
+    }
+    else{
+        return undefined
+    }
+})
+console.log(num2)

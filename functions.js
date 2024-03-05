@@ -22,7 +22,7 @@ let result1 = addTwoNumbers1(3,2)
 console.log("Result One : ",result1)
 
 
-
+// code below the return statement in a function is not reachable.
 function addTwoNumbers2(a,b){
     console.log("Here's your result!!!")
     return a + b
