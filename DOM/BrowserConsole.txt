@@ -1,0 +1,94 @@
+document
+//This refers to the entire window that is visible to us.
+//It is within the window object
+
+getElementById()
+document.getElementById("first")
+//This provides the entire tag of specified 'id'
+//It returns a NodeList
+
+getElementsByClass()
+document.getElementsByClassName("heading")
+//This provides the entire tag of the specified 'class'
+//It returns an HTMLCollection
+
+let title = document.getElementById("first")
+//content of id="first" is taken in 'title'
+
+title.style.backgroundColor="aqua"
+//Changes the background colour to 'aqua'
+
+title.style.borderRadius="30px"
+//Sets the curve radius of edges of border to '30px'
+
+title.style.borderColor="yellow"
+//Sets the colour of border to 'yellow'
+
+title.style.borderStyle = "solid"
+//Sets the border style as solid
+
+title.style.padding="20px"
+// Sets left spacing to '20px'
+
+title.style.borderWidth = "5px"
+//Sets the border width as '5px'
+
+title.innerHTML
+//Provides the entire html structure within the 'title'
+
+title.textContent
+//Provides the text content along with hidden attributes
+
+title.innerText
+//Provides the text that has visible attributes only
+
+document.querySelector("h2")
+//Select the first occunrence of 'h1'
+
+document.querySelectorAll("h2")
+//Select all the occurences of 'h1'
+
+document.querySelector('input[type="password"]')
+//Select first occurence of 'input' of 'type="password"'
+
+document.querySelector('ul')
+//Selects the 'ul' tag even though 'id or 'class' is not provided
+
+let myul = document.querySelector('ul')
+let myli = myul.querySelector('li')
+//Selects the inner 'li' element
+
+myli.style.backgroundColor="aqua"
+//Turns the background ciolour of first 'li' element to 'aqua'
+
+myli.style.padding="10px"
+// sets left spacing to '10px'
+
+myli.innerHTML="Zero"
+//Changes the first 'li' element value to 'Zero'
+
+myli.style.color="yellow"
+//Changes the colour of 'li' element to yellow
+
+let mylis = document.querySelectorAll("li")
+//Storing all the 'li' elements in 'mylis'
+
+mylis[0].style.color="red"
+// Changes the colour of '0th' index element of 'mylis' to 'red'
+//Hence, indexing is applicable to NodeList
+//NodeList is not an array but similar to array
+//Therefore, NodeList does not contain filter,map and reduce
+
+mylis.length
+//Returns the length of the NodeList
+
+mylis.forEach( (index) => index.style.color="red" )
+//Changes the colour of all list elements to red
+
+let arr1 = Array.from(mylis)
+/converts NodeList to an array
+//All the properties of array can hence be applied
+
+let tempClass = document.getElementsByClassName("list-class")
+let arr2 = Array.from(tempClass)
+//Converts the HTMLCollection to an array
