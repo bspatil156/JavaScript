@@ -1,3 +1,39 @@
+                                    window (object)
+                                        |
+                                        |    
+                                    document
+                                        |
+                                        |
+                                       HTML
+                                       / \
+                                     /     \
+                                   /         \
+                                head         body
+                                 / \           | 
+                               /     \         |
+                             /         \      div
+                          title       meta     |  \ 
+                            |           |       \   \ 
+                            |           |        \    \
+                        text node   attribute   h1     p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document
 //This refers to the entire window that is visible to us.
 //It is within the window object
