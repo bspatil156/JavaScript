@@ -43,7 +43,7 @@ document.getElementById("first")
 //This provides the entire tag of specified 'id'
 //It returns a NodeList
 
-getElementsByClass()
+//getElementsByClassName()
 document.getElementsByClassName("heading")
 //This provides the entire tag of the specified 'class'
 //It returns an HTMLCollection

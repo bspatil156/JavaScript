@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements in DOM</title>
+</head>
+<style>
+    .body{
+        background-color: black;
+        color: #ffffff;
+    }
+</style>
+<body class="body">
+    <div class="parent">
+        <div class="days">Monday</div>
+        <!-- This is a comment -->
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+        <div class="days">Friday</div>
+    </div>
+</body>
+<script>
+    let parent = document.querySelector(".parent")
+    // Selects the parent class elements.
+    console.log(parent)
+    console.log(parent.children)
+    //Select the children of parent.
+    console.log(parent.children[0].innerHTML)
+    // Prints the innerHTML of first element.
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML)
+    }
+    // Above loop prints the innerHTML of all the children.
+
+    console.log(parent.children[0].style.color="purple")
+    // The above line changes the colour of child at index '0' to purple.
+    //It also prints purple in the console.
+
+    console.log(parent.firstElementChild)
+    // Selects the first child of the 'parent' and prints it's innerHTML.
+
+    console.log(parent.lastElementChild)
+    // Selects the last child of the 'parent' and prints it's innerHTML.
+
+    parent.lastElementChild.style.color="purple"
+    // Changes the colour of last child to purple.
+
+    let day = document.querySelector(".days")
+    console.log(day)
+    // Select the first occurence of 'days' class.
+
+    console.log(day.parentElement)
+    // Prints the innerHTML of parent element of a class('day' class here).
+
+    console.log(day.nextElementSibling)
+    // Print the innerHTML of the next sibiling of current element
+
+    // Provides all the children of 'parent'.
+    console.log("Child nodes are : ", parent.childNodes)
+
+    // Changes the colour of all 'li' elements to purple.
+    for (let i = 0; i < parent.children.length; i++) {
+        parent.children[i].style.color="purple"
+    }
+    
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating new elements</title>
+</head>
+<style>
+    .body{
+        background-color: black;
+        color: #ffffff;
+    }
+</style>
+<body class="body">
+    <script>
+        // Creates a new Element.
+        let divElement = document.createElement('div')
+        // console.log(divElement)
+
+        // Adds class attribute to 'divElement'.
+        divElement.className = "myDiv"
+        
+        // Adds id attribute to the 'divElement' from random method.
+        divElement.id = Math.random
+
+        // Sets the title to 'div'
+        divElement.setAttribute("title","This is divTitle")
+
+        // variable_name.setAttribute("attribute(key)","value of attribute(value)")
+        // setAttribute() method sets the value of the desired attribute.
+        // It does'nt fetch the value firstly, instead directly writes the content.
+
+        // Sets the color of div to 'orange'.
+        divElement.style.color = "orange"
+
+        // Sets the padding of div element to '15px'.
+        divElement.style.padding = "15px"
+
+        // The following code over writes the content that are already present in 'divElement'. 
+        // So it firstly fetches the value and then overwrites.
+        // divElement.innerText = "This my div element"
+
+        // Creates a new text node
+        let text = document.createTextNode("This is a text of text node")
+        
+        // appends the above text node to 'divElement' as a child.
+        divElement.appendChild(text)
+        document.body.appendChild(divElement)
+
+        let ul = document.createElement("ul")
+        let li1 = document.createElement("li")
+        let li2 = document.createElement("li")
+        let li3 = document.createElement("li")
+        let li4 = document.createElement("li")
+        let li5 = document.createElement("li")
+        let li6 = document.createElement("li")
+
+        ul.appendChild(li1)
+        ul.appendChild(li2)
+        ul.appendChild(li3)
+        ul.appendChild(li4)
+        ul.appendChild(li5)
+        ul.appendChild(li6)
+
+        li1.innerText = "This is li1"
+        li2.innerText = "This is li2"
+        li3.innerText = "This is li3"
+        li4.innerText = "This is li4"
+        li5.innerText = "This is li5"
+        li6.innerText = "This is li6"
+
+        console.log(ul)
+
+        document.body.appendChild(ul)
+
+        let colours = ["red","yellow","orange","green","aqua","purple"]
+        for (let i = 0; i < colours.length; i++) {
+            ul.children[i].style.color = colours[i]
+        }
+    </script>
+</body>
+</html>
