@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing And Removing Elements</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="languages">
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C</li>
+        <li>C++</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(language) {
+        let addLang = document.createElement('li')
+        addLang.innerHTML = `${language}`
+        let ul = document.querySelector('ul')
+        ul.appendChild(addLang)
+        console.log(ul)
+    }
+// Appends 'undefined' as innerHTML of 'li' in 'ul' as no paramenter is provided
+addLanguage()
+
+// Appends 'Python' as innerHTML of 'li' in 'ul'
+addLanguage("Python")
+
+    function optiAddLanguage(language) {
+        let li = document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        let ul = document.querySelector(".languages")
+        ul.appendChild(li)
+    }
+
+optiAddLanguage("Solidity")
+</script>
+</html>
