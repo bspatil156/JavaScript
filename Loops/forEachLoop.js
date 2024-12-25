@@ -16,6 +16,8 @@ languages.forEach((element,index,array) =>{
     console.log(`index : ${index}, element : ${element}, array : ${array}`)
 })
 
+console.log()
+
 // forEach() does'nt return anything
 let forEachReturn = languages.forEach((lang) =>{
     for(i = 1;i<=5;i++){
@@ -40,6 +42,7 @@ let langArr = [
 ]
 
 langArr.forEach((Language) =>{
+    console.log(Language)
     console.log(`Language : ${Language.langName}`)
     console.log(`Extension of language : ${Language.extension}`)
 })

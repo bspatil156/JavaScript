@@ -11,7 +11,8 @@
 })();
 
 
-// A semi-colon must be included in IIFE syntax as mentioned above
+// A semi-colon must be included in IIFE syntax as mentioned above.
+// The semi-colon is to end the context of immediately invoked functions
 // Else '(intermediate value)(...)' error occurs
 (function Print2(){
     // Named IIFE
@@ -24,4 +25,6 @@
     console.log(`IIFE Of Arrow Function`)
 })();
 
-((name) => `Hello ${name}`)(console.log(("Bhavesh")))
+((name1) => `Hello ${name1}`)(console.log(("Bhavesh")));
+
+((name2) => console.log(`Hello ${name2}`))("Bhavesh");

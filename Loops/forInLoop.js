@@ -9,14 +9,24 @@ for(let key in obj){
     console.log(key)
 }
 
+console.log()
+
 // Prints elements
 for(key in obj){
     console.log(`${obj[key]}`)
 }
 
+console.log()
+
 // Prints keys and elements
 for(key in obj){
     console.log(`The corresponding value of key "${key}" is "${obj[key]}"`)
+}
+
+console.log()
+
+for([firstAlphabetOFKey,secondAlphabetOFKey,thirdAlphabetOFKey] in obj){
+    console.log(`The first, second and third alphabets of key are "${firstAlphabetOFKey}", "${secondAlphabetOFKey} and ${thirdAlphabetOFKey}" respectively`)
 }
 
 // for In loop on arrays

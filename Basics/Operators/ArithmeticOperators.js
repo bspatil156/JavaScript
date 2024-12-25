@@ -40,7 +40,7 @@ let num4 = 12
 num4++
 console.log("The incremented value is",num4)
 
-//Differnece between pre-increment and post-increment operator
+//Difference between pre-increment and post-increment operator
 //pre-incremented
 let num5 = 2
 let a = ++num5
@@ -92,7 +92,7 @@ num19 = true //default value of teue is 1
 num20 = true
 console.log("False - True",num20-num19);
 
-num21 = true //default value of teue is 1
+num21 = true //default value of true is 1
 num22 = false
 console.log("True * False",num21*num22);
 console.log(typeof(num21));
@@ -101,8 +101,3 @@ console.log(typeof(num21*num22));
 //True : 1
 //False : 0
 
-// let name = "Bhavesh Patil"
-// console.log(name);
-// for(i=0;i<=8;i++){
-//     console.log(name[i]);
-// } 

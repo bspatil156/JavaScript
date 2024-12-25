@@ -8,12 +8,3 @@ console.log("Sum of numbers is : "+sum)
 console.log("Differnce of numbers is : "+diff)
 console.log("Product of numbers is : "+mult)
 console.log("Division of numbers is : "+div)
-if(num1>num2){
-    console.log("Number 1 is greater than number 2!!!")
-}
-else if(num1<num2){
-    console.log("Number 1 is smaller than number 2!!!");
-}
-else{
-    console.log("Number 1 and Number 2 are equal!!!")
-}

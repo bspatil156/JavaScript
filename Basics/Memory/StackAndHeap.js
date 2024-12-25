@@ -1,5 +1,5 @@
 // Stack Memory stores Primitive Datatypes
-// A copy of variables is generated and further changes are made in this variable
+// A copy of variables is generated and further changes are made in this copy.
 let name = "Bhavesh Sanjay Patil"
 let name1 = name
 name1 = "Kartiki Sanjay Patil" 
@@ -30,6 +30,8 @@ console.log(userTwo.email)
 // Though it is const variable due to same reference in Heap memory changes are visible in both arrays.
 const ar = [12,434,3546,67687,33454,45788] 
 const ar1 = ar
+console.log(ar)
+console.log(ar1)
 ar1[0] = 0
 console.log(ar1)
 console.log(ar)
