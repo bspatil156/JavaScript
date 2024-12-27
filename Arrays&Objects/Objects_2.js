@@ -1,15 +1,15 @@
 // Singleton Object Declaration : 
-// let myobj = new Object()
+let singletonObj = new Object()
 
 // Object Literal Declaration : 
-let myobj = {}
-console.log(myobj)
+let literalObj = {}
+console.log(literalObj)
 
 // Nested Objects and accessing them : 
-myobj.firstname = "Bhavesh"
-myobj["middle name"] = "Sanjay"
-myobj.surname = "Patil"
-myobj["Interest"] = {
+literalObj.firstname = "Bhavesh"
+literalObj["middle name"] = "Sanjay"
+literalObj.surname = "Patil"
+literalObj["Interest"] = {
     Games : "Badminton",
     Hobby : "Reading",
     "leisure activity" : {
@@ -25,9 +25,9 @@ myobj["Interest"] = {
     }
 }
 
-console.log(myobj)
-console.log(myobj.Interest["leisure activity"].Outdoor["adventure activity"])
-console.log(myobj.Interest["leisure activity"].Indoor.Creativity)
+console.log(literalObj)
+console.log(literalObj.Interest["leisure activity"].Outdoor["adventure activity"])
+console.log(literalObj.Interest["leisure activity"].Indoor.Creativity)
 
 // Joining two Objects : 
 
@@ -47,6 +47,7 @@ Object.assign(target,obj1,obj2,obj3)
 console.log("This is joining of Objects by assign() method : ",target)
 
 // 2)'...' spread operator : 
+// Spread operator also join the objects
 let obj5 = {...obj1,...obj2,...obj3}
 console.log("This is joining of Objects by spread operator : ",obj5)
 
@@ -69,25 +70,29 @@ console.log(arr[0].name)
 
 // keys() method : 
 // Returns keys of the Object in Array
-console.log(Object.keys(myobj))
-console.log(typeof(Object.keys(myobj)))
+console.log(Object.keys(literalObj))
+console.log(typeof(Object.keys(literalObj)))
 
 // values() method : 
 // Returns values of the Object in Array
-console.log(Object.values(myobj))
-console.log(typeof(Object.values(myobj)))
+console.log(Object.values(literalObj))
+console.log(typeof(Object.values(literalObj)))
 
 // entries() method : 
 // Returns the entries of Object in array : 
-console.log(Object.entries(myobj))
-console.log(typeof(Object.entries(myobj)))
+console.log(Object.entries(literalObj))
+console.log(typeof(Object.entries(literalObj)))
 
 // hasOwnProperty() method : 
 // Returns true if parameter provided is present as key in Object
-console.log(myobj.hasOwnProperty("Interest")) 
-console.log(myobj.hasOwnProperty("Hobby"))
-console.log(myobj.hasOwnProperty("surname"))
+console.log(literalObj.hasOwnProperty("Interest")) 
+console.log(literalObj.hasOwnProperty("Hobby"))
+console.log(literalObj.hasOwnProperty("surname"))
 
 console.log(obj1.hasOwnProperty("a"))
 console.log(obj1.hasOwnProperty("A"))
 
+// console.log(literalObj.Interest?["leisure activity"].Outdoor)
+console.log(literalObj.Interest?.Games)
+// The '?' is used in case if it is not known whether 'Interest' exists or not.
+// There may be cases of apihandling where such a situation may appear.

@@ -1,62 +1,62 @@
 let arr = [3,6,9,5,8,4]
-// console.log(arr)
-// console.log(typeof(arr))
-// console.log(arr[2])
+console.log(arr)
+console.log(typeof(arr))
+console.log(arr[2])
 
 let arr1 = ["Rolls Royce","Mercedes","Audi","Mustang"]
-// console.log(arr1[3])
+console.log(arr1[3])
 
 let arr2 = new Array("India",1000,"Russia",800,"Germany",600,"France",400)
-// console.log(arr2[0])
+console.log(arr2[0])
 
 let arr3 = new Array(12,true,"Hello",{name:"Bhavesh"},12n,0b111)
-// console.log(arr3)
-// console.log(arr3[1])
-// console.log(typeof(arr3[1]))
-// console.log(arr3[3])
-// console.log(typeof(arr3[3]))
-// console.log(arr3[4])
-// console.log(typeof(arr3[4]))
+console.log(arr3)
+console.log(arr3[1])
+console.log(typeof(arr3[1]))
+console.log(arr3[3])
+console.log(typeof(arr3[3]))
+console.log(arr3[4])
+console.log(typeof(arr3[4]))
 
-// // Array Methods() : 
+// Array Methods() : 
 
-// // push() method :
-// // Adds the element provided as a paramter to the end of array.
-// arr1.push("Bugati")
-// arr1.push("Porche")
-// console.log(arr1)
+// push() method :
+// Adds the element provided as a paramter to the end of array.
+arr1.push("Bugati")
+arr1.push("Porche")
+console.log(arr1)
 
-// // pop() method : 
-// // Removes the element from the  end of array.
-// arr1.pop()
-// console.log(arr1)
+// pop() method : 
+// Removes the element from the  end of array.
+arr1.pop()
+console.log(arr1)
 
-// // unshift() method : 
-// // Adds the element provided as parameter to the start of array.
-// arr1.unshift("BMW")
-// console.log(arr1)
-// console.log(arr1.unshift("Lamborghini"))
-// console.log(arr1)
+// unshift() method : 
+// Adds the element provided as parameter to the start of array.
+arr1.unshift("BMW")
+console.log(arr1)
+console.log(arr1.unshift("Lamborghini"))
+console.log(arr1)
 
-// // shift() method : 
-// // Removes the element provided as parameter to the start of array.
-// arr1.shift()
-// console.log(arr1)
-// console.log(arr1.shift())
-// console.log(arr1)
+// shift() method : 
+// Removes the element provided as parameter to the start of array.
+arr1.shift()
+console.log(arr1)
+console.log(arr1.shift())
+console.log(arr1)
 
-// // includes() method : 
-// // Returns 'true' if value provide as parameter exists in the array else returns 'false'.
-// console.log(arr1.includes("Cadlee"))
-// console.log(arr1.includes("Mustang"))
+// includes() method : 
+// Returns 'true' if value provide as parameter exists in the array else returns 'false'.
+console.log(arr1.includes("Cadlee"))
+console.log(arr1.includes("Mustang"))
 
-// // indexOf() method : 
-// // Returns array index of the element provided as parameter in first occurrence.
-// // If element is not present in the array, returns '-1'.
-// // IF provided ,the second parameter acts as the index from where the search is to be started.
-// console.log(arr1.indexOf("Audi"))
-// console.log(arr1.indexOf("Ferrari"))
-// console.log(arr1.indexOf("Mustang",1))
+// indexOf() method : 
+// Returns array index of the element provided as parameter in first occurrence.
+// If element is not present in the array, returns '-1'.
+// IF provided ,the second parameter acts as the index from where the search is to be started.
+console.log(arr1.indexOf("Audi"))
+console.log(arr1.indexOf("Ferrari"))
+console.log(arr1.indexOf("Mustang",1))
 
 // join() method : 
 // assigns the variable, values of elements in array seperated with commas if no string provided as parameter.
@@ -110,6 +110,13 @@ let eng_newspaper = ["The Hindu","Times Of India","The Economic","Indian Express
 let hindi_newspaper = ["Sakal","Lokmat","Punya-nagari","Prabhat"]
 console.log(eng_newspaper.push(hindi_newspaper))
 console.log(eng_newspaper)
+// Elements of array inside an array can be assessed using the below syntax.
+console.log(eng_newspaper[3][0])
+console.log(eng_newspaper[4][2])
+
+// Difference between 'push()' and 'concat()' : 
+// If an array is pushed('push(arr)'), the entire array is the element.
+// If an array is concatenated('concat(arr)') the individual elements of concatenated array become elements of new array.
 
 
 // concat() method : 
@@ -127,6 +134,7 @@ console.log(n_paper)
 
 // flat() method : 
 // Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+// Takes parameter as the depth upto which the elements of suv=b-arrays are to be concatenated.
 let subjects = ["English","History","Geometry",["Hindi","Geography","Sanskrit"],"Algebra",["Science","Defence Studies","Marathi"]]
 let mysubjects = subjects.flat()
 console.log(mysubjects)
@@ -138,17 +146,17 @@ console.log(mysubjects)
 console.log(Array.isArray("Bhavesh"))
 console.log(Array.isArray(arr))
 
-// // // from() method : 
-// // // creates an array of itterable object
-// // console.log(Array.from("Bhavesh"))
-// // // Returns an empty array in case if array of key or value is to be formed is not provided.
-// // console.log(Array.from({name : "Bhavesh",
-// //                         age : 21,
-// //                         hobby : "Reading"}))
+// from() method : 
+// creates an array of itterable object
+console.log(Array.from("Bhavesh"))
+// Returns an empty array in case if array of key or value is to be formed is not provided.
+console.log(Array.from({name : "Bhavesh",
+                        age : 21,
+                        hobby : "Reading"}))
 
-// // // of() method : 
-// // // creates an array of variables provided as parameter
-// // score1 = 100
-// // score2 = 200
-// // score3 = 300
-// // console.log(Array.of(score1,score2,score3))
+// of() method : 
+// creates an array of variables provided as parameter
+score1 = 100
+score2 = 200
+score3 = 300
+console.log(Array.of(score1,score2,score3))

@@ -25,7 +25,7 @@ console.log(myobj["full name"])
 
 console.log(mysymbol)
 console.log(typeof(mysymbol))
-console.log(myobj.mysymbol)
+console.log(myobj.mysymbol) //undefined
 // Symbol in object can be accessed only through indexing
 console.log(myobj[mysymbol])
 
@@ -44,24 +44,40 @@ console.log(myobj["weight"])
 // Object that should be prevented from modification must be provided as parameter.
 myobj.weight = 66
 // Object.freeze(myobj)
-myobj.weight = 67
+myobj.weight = 67   //This line does'nt work if the objet is freezed(freeze()).
 console.log(myobj)
 
-// // Adding an element in object
-// myobj.thought = function(){
-//     console.log("Tit for Tat!!!")
-// }
+// Adding an element in object
+myobj.thought = function(){
+    console.log("Tit for Tat!!!")
+}
 
-// // Returns function return back.
-// // Function is not executed, but the reference of the function is returned.
-// console.log(myobj.thought)
-// console.log(typeof(myobj.thought))
-// console.log(myobj.thought())
-// console.log(typeof(myobj.thought()))
+// Returns function return back.
+// Function is not executed, but the reference of the function is returned.
+console.log(myobj.thought)
+console.log(typeof(myobj.thought))
+console.log(myobj.thought())
+console.log(typeof(myobj.thought()))
 
-// // Adding another element in Object and accessing it through 'this' : 
-// myobj.greet = function(){
-//     console.log(`Welcome, ${this["full name"]}`)
-// }
-// console.log(myobj.greet)
-// console.log(myobj.greet())
+// Adding another element in Object and accessing it through 'this' : 
+myobj.greet = function(){
+    console.log(`Welcome, ${this["full name"]}`)
+}
+console.log(myobj.greet)
+console.log(myobj.greet())
+
+// Returns true if the object is frozen, false otherwise.
+// console.log(Object.isFrozen(myobj))
+
+let obj = Object.create({name:"Bhavesh",
+    age:21,
+    hobby:"Reading"
+})
+// console.log(obj) //{}
+// console.log(obj.name)    //Bhavesh
+// console.log(obj.age)   //21
+// console.log(obj.hobby)   //Reading
+// console.log(Object.create({name:"Dhiraj",
+//     age:21,
+//     hobby:"Mechatronics"
+// }))

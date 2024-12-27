@@ -6,6 +6,11 @@ let book = {
 }
 
 // Object destructuring : 
+// Instead of accessing 'book.author_name' everytime, we use object de-structure.
+// We can do object de-structure, by actual key name i.e. 'author_name' here.
+let {author_name} = book
+console.log(author_name)
+// We can also provide our custom name using the syntax below.
 let {author_name : a_name} = book
 console.log(a_name)
 
